@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import "./SignUp.css"
+import {Link, Router} from 'react-router-dom';
 
 class SignUp extends Component{
     constructor(props){
@@ -28,7 +29,7 @@ class SignUp extends Component{
     }
 
     render(){
-        return ( 
+        return (
         <div className="SignUp">
             <form onSubmit={this.handleSubmit}>
                 <FormGroup controlId="name" bsSize="large"  className="SignUpElement">

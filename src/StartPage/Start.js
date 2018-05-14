@@ -5,6 +5,7 @@ import Login from './Login/Login.js'
 import {Button} from "react-bootstrap"
 import SignUp from '../SignUp/SignUp'
 import ReactDOM from 'react-dom';
+import {Link} from 'react-router-dom';
 
 class Start extends Component{
     constructor(props){
@@ -25,7 +26,8 @@ class Start extends Component{
                     <Login/>
                 </div>
                 <div>
-                    Don't have an account? <Button onClick = {this.jump_to_sign_up}> Sign up</Button>
+                    Don't have an account?
+                    <Link to = {'/sign_up'}>Sign Up</Link>
                 </div>
             </div>
         )
